@@ -1,10 +1,91 @@
 [
   {
     "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "judul": "Kebun Raya ITERA",
+    "kategori": "Taman",
+    "kabupaten": "Lampung Selatan",
+    "hargaTiket": 0,
+    "jamBuka": "08.00 - 16.00"
+  },
+
+  {
+    "id": "2",
+    "judul": "Wira Garden",
+    "kategori": "Wisata Alam",
+    "kabupaten": "Bandar Lampung",
+    "hargaTiket": 15000,
+    "jamBuka": "07.30 - 17.00"
+  },
+
+  {
+    "id": "3",
+    "judul": "Rio By The Beach",
+    "kategori": "Pantai",
+    "kabupaten": "Lampung Selatan",
+    "hargaTiket": 40000,
+    "jamBuka": "07.00 - 20.00"
+  },
+
+  {
+    "id": "4",
+    "judul": "Pantai Mutun",
+    "kategori": "Pantai",
+    "kabupaten": "Pesawaran",
+    "hargaTiket": 25000,
+    "jamBuka": "07.00 - 18.00"
+  },
+
+  {
+    "id": "5",
+    "judul": "Senaya Beach",
+    "kategori": "Pantai",
+    "kabupaten": "Lampung Selatan",
+    "hargaTiket": 35000,
+    "jamBuka": "08.00 - 20.00"
+  },
+
+  {
+    "id": "6",
+    "judul": "Air Terjun Way Kalam",
+    "kategori": "Air Terjun",
+    "kabupaten": "Lampung Selatan",
+    "hargaTiket": 15000,
+    "jamBuka": "08.00 - 17.30"
+  },
+
+  {
+    "id": "7",
+    "judul": "Taman Nasional Way Kambas",
+    "kategori": "Taman",
+    "kabupaten": "Lampung Timur",
+    "hargaTiket": 15000,
+    "jamBuka": "07.30 - 16.00"
+  },
+
+  {
+    "id": "8",
+    "judul": "Pantai Gigi Hiu",
+    "kategori": "Pantai",
+    "kabupaten": "Tanggamus",
+    "hargaTiket": 20000,
+    "jamBuka": "08.00 - 17.00"
+  },
+
+  {
+    "id": "9",
+    "judul": "Air Terjun Batu Putu",
+    "kategori": "Air Terjun",
+    "kabupaten": "Bandar Lampung",
+    "hargaTiket": 10000,
+    "jamBuka": "08.00 - 18.00"
+  },
+
+  {
+    "id": "10",
+    "judul": "Air Terjun Way Lalaan",
+    "kategori": "Air Terjun",
+    "kabupaten": "Tanggamus",
+    "hargaTiket": 10000,
+    "jamBuka": "09.00 - 17.00"
   }
 ]
