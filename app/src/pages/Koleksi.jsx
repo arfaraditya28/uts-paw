@@ -2,14 +2,14 @@ import { useState } from 'react'
 import useKoleksi from '../hooks/useKoleksi.js'
 import KotakPencarian from '../components/KotakPencarian.jsx'
 import KartuItem from '../components/KartuItem.jsx'
+import PesanStatus from '../components/PesanStatus.jsx'
 
 export default function Koleksi() {
   const { items, loading, error } = useKoleksi()
   const [cari, setCari] = useState('')
   const [kategori, setKategori] = useState('Semua')
 
-  if (loading) return <p>Memuat data...</p>
-  if (error) return <p role="alert">Gagal memuat: {error}</p>
+
 
   const daftarKategori = ['Semua', ...new Set(items.map((item) => item.kategori))]
   const tampil = items.filter(
@@ -20,6 +20,7 @@ export default function Koleksi() {
 
   return (
     <section>
+      <PesanStatus loading={loading} error={error} />
       <h1>Koleksi</h1>
       <div className="alat-koleksi">
         <KotakPencarian nilai={cari} onUbah={setCari} />
