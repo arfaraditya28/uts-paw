@@ -1,10 +1,14 @@
-# Nama Aplikasi
+# WisaLam
 
-Nama: MUHAMMAD ARFA RADITYA
-NIM: 124140015
-Kelas: RB
-Tema: Destinasi Wisata Lampung
-Deployment: https://arfaraditya28.github.io/uts-paw/
+**Nama**: MUHAMMAD ARFA RADITYA
+
+**NIM**: 124140015
+
+**Kelas**: RB
+
+**Tema**: Destinasi Wisata Lampung
+
+**Deployment**: https://arfaraditya28.github.io/uts-paw/
 
 ## Screenshot
 
@@ -46,3 +50,4 @@ Deployment: https://arfaraditya28.github.io/uts-paw/
 cd app
 npm install
 npm run dev
+```
