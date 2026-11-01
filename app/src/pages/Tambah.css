@@ -41,3 +41,9 @@
     align-self: stretch;
   }
 }
+
+#judul,
+#kategori,
+#kabupaten {
+  font-weight: 400;
+}
