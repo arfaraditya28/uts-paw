@@ -38,11 +38,12 @@
 
 ## Fitur
 
-1. **Beranda** — menampilkan judul aplikasi, tema, serta ringkasan jumlah destinasi dan jumlah kategori.
-2. **Koleksi** — menampilkan seluruh destinasi dalam bentuk kartu (kategori, kabupaten/kota, harga tiket, jam buka), dilengkapi pencarian berdasarkan judul dan filter per kategori.
-3. **Tambah** — menambahkan tempat destinasi wisata dengan memasukkan judul, kategori, kabupaten/kota, harga tiket, dan jam buka
-4. **Statistik** — tabel jumlah destinasi per kategori beserta total keseluruhan.
-5. **Tentang** — menampilkan biodata (nama, NIM, kelas, tema) yang dibaca dari `mahasiswa.json` serta tautan ke repositori.
+- **Beranda** — menampilkan judul aplikasi, tema, serta ringkasan jumlah destinasi dan jumlah kategori.
+- **Koleksi** — menampilkan seluruh destinasi dalam bentuk kartu (kategori, kabupaten/kota, harga tiket, jam buka), dilengkapi pencarian berdasarkan judul dan filter per kategori.
+- **Tambah** — menambahkan tempat destinasi wisata dengan memasukkan judul, kategori, kabupaten/kota, harga tiket, dan jam buka
+- **Statistik** — tabel jumlah destinasi per kategori beserta total keseluruhan.
+- **Tentang** — menampilkan biodata (nama, NIM, kelas, tema) yang dibaca dari `mahasiswa.json` serta tautan ke repositori.
+- **Halaman 404** — ditampilkan otomatis ketika pengguna membuka alamat yang tidak terdaftar pada routing, berisi kode kesalahan, keterangan singkat bahwa halaman tidak ditemukan, serta tautan untuk kembali ke beranda.
 
 ## Menjalankan secara lokal
 
@@ -51,3 +52,11 @@ cd app
 npm install
 npm run dev
 ```
+
+## Konsep React yang Dipakai
+
+- **useState** — menyimpan state lokal seperti isi form dan pesan galat di halaman Tambah, serta kata kunci pencarian dan kategori terpilih di halaman Koleksi.
+- **useEffect** — mengambil data awal dengan `fetch` saat aplikasi pertama dimuat, lalu menyimpan setiap perubahan data ke `localStorage`.
+- **Context dan custom hook** — `KoleksiProvider` membagikan data koleksi ke semua halaman lewat `KoleksiContext`, dan diakses dengan hook `useKoleksi` serta `useLocalStorage` tanpa perlu mengoper props berlapis-lapis.
+- **React Router** — `Routes` dan `Route` mengatur enam halaman, `Outlet` dipakai untuk layout bersama, `Link`/`NavLink` untuk navigasi, `useParams` untuk membaca id di halaman detail, dan `useNavigate` untuk berpindah halaman setelah data disimpan atau dihapus.
+- **Rendering kondisional dan daftar** — pesan memuat, pesan galat, dan notifikasi validasi hanya muncul sesuai kondisi, sedangkan kartu destinasi, menu, dan isi tabel dibangun dengan `.map()` serta `key` yang unik.
